@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do App</title>
+    <!-- Link to Bootstrap Icons library and custom styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Croissant+One&family=Merriweather:ital@0;1&family=Sedgwick+Ave+Display&family=Work+Sans:wght@400;500;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="header">
+          <h2>Hello Gorgeous!</h2>
+        </div>
+        <!-- To-Do input form -->
+        <div class="new-todo">
+          <form id="todoform">
+            <input type="text" name="newtodo" id="newtodo" placeholder="What do you want to do today?" />
+            <!-- Plus icon for adding new to-do items -->
+            <button type="submit">
+              <i class="bi bi-plus-circle-fill"></i>
+            </button>
+          </form>
+        </div>
+      </header>
+      <div class="notification"></div>
+      <!-- To-Do list container -->
+      <div id="todolist">
+        <!-- To-Do items will be dynamically added here -->
+      </div>
+      <!-- Motivational quote container -->
+      <div id="motivational-quote-container">
+        <div id="motivational-quote"></div>
+      </div>
+    </div>
+    <!-- Include the JavaScript for the To-Do App -->
+    <script src="./script.js"></script>
+  </body>
+</html>
